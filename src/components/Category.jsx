@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import fetchMockData from '../async-mock.js';
 
 const Category = () => {
   const { categoryId } = useParams();
@@ -7,9 +8,8 @@ const Category = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const response = await fetch('../data.json');
-      const data = await response.json();
-      const filteredProducts = data.filter(product => product.categoryId === categoryId);
+      const data = await fetchMockData();
+      const filteredProducts = data.filter(product => product.description === categoryId);
       setProducts(filteredProducts);
     };
 

@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-.button-container {
+.filter-buttons {
     margin-bottom: 20px;
     margin-top: 20px;
     margin-left: 43%;
 }
   
-.filter-button {
+.filter-buttons button{
     font-family: "PT Sans", sans-serif;
     padding: 10px 20px;
     margin-right: 10px;
@@ -17,10 +17,10 @@
     cursor: pointer;
 }
   
-.filter-button:hover {
+.filter-buttons button:hover {
     background-color: #333; 
 }
   
-.filter-button:focus {
+.filter-buttons button:focus {
     outline: none; 
 }
