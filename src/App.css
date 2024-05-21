@@ -1,38 +1,26 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button-container {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 43%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  
+.filter-button {
+    font-family: "PT Sans", sans-serif;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #4b0081; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
+.filter-button:hover {
+    background-color: #333; 
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  
+.filter-button:focus {
+    outline: none; 
 }
